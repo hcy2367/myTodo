@@ -1,0 +1,24 @@
+<div class="box post">
+  <h2>留言</h2>
+  <p>
+  	<form action="" id="myForm" name="myForm" ng-controller="MsgNewCtrl">
+  		<p>
+  			<label for="myName">姓名：</label>
+  			<input type="text" placeholder="请输入姓名..."  id="myName" />
+  			<span id="nameValidate">姓名不能为空</span>
+  		</p>
+  		<p>
+  			<label for="myMessage">内容：</label>
+  			<textarea id="myMessage" rows="10" placeholder="请输入内容..."></textarea>
+  			<span id="contentValidate">内容不能为空</span>
+  		</p>
+  		<input type="submit" class="submit" ng-click="newMessage($event)" value="提交" id="submitBtn" />
+  	</form>
+	
+	<!--
+  	<input type="text" class="submit" ng-enter="newMessage($event)" ng-model="title" placeholder="leave a new message." /> 
+	<p><span class="nice-tip">温馨提示：</span>按下回车键提交留言</p>
+  	-->
+  </p>
+  
+</div>

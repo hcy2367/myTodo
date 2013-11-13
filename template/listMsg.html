@@ -1,0 +1,22 @@
+<!--添加新的留言-->
+<div class="box post">
+  	<p><input type="button" value="添加留言" name="title" class="submit" ng-click="gotoEdit(messages)" id="addMsgBtn" /></p>
+</div>
+
+<!--todo留言-->
+<div class="box todos message">
+  	<h2 class="box">已留言消息</h2>
+  	<ul>
+    	<li class="item" ng-repeat="m in messages | orderBy:'date':true">
+	      	<span>{{m.id}}</span> 　　<!--id-->
+	      	<span class="new mr10">{{m.name}}</span>  <!--name-->
+	      	<span class="mr10">{{m.content}}</span> <!--content-->
+	      	<span class="date">({{m.date | date:'yyyy-MM-dd HH:mm:ss'}})</span><!--date-->
+	      	<a href="" ng-click="itemDelete(m)">删除</a>
+    	</li>
+  	</ul>
+</div>
+
+<div class="returnBtn">
+	<a href="" ng-click="returnHome()">返回首页</a>
+</div>

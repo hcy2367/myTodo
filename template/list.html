@@ -1,0 +1,28 @@
+<!--添加新的todo-->
+<div class="box post">
+    <h2>添加记录</h2>
+    <p><input type="text" placeholder="Create a new Todo." name="title" class="submit" ng-enter="newTodo($event)"></p>
+</div>
+
+<!--todo列表-->
+<div class="box todos list">
+    <h2>待办事项</h2>
+    <ul>
+        <li class="item" ng-repeat="x in list | orderBy:'date':true">
+            <span class="mr10">{{x.id}}</span> <!--id-->
+            <span ng-class="itemClass(x.finished)">{{x.title}}</span> <!--title-->
+            <span class="date">({{x.date | date:'yyyy-MM-dd HH:mm:ss'}})</span> <!--date-->
+            <a href="" ng-click="gotoEdit(x)">编辑</a>
+            <a href="" ng-show="! x.finished" ng-click="itemFinished(x)">完成</a>
+            <a href="" ng-show="x.finished" ng-click="itemRenew(x)">恢复</a>
+            <a href="" ng-click="itemDelete(x)">删除</a>
+        </li>
+    </ul>
+</div>
+
+<!--添加新的留言-->
+<div class="box todos message" id="leaveMsg">
+    <h2>欢迎关注</h2>
+    <p><a href="" id="leave-btn" ng-click="gotoListMsg()">+关注</a></p>
+</div>
+
