@@ -1,0 +1,47 @@
+/*app样式*/
+body { background:#EEE; padding-top:50px;}
+.box { margin-bottom:40px; }
+
+p { line-height:1.5em; }
+a { color:#49afcd; text-decoration:underline; }
+a:hover { color:#51a351; }
+
+.page { margin:10px auto; background:#FFF; padding:10px 20px; border:1px solid #CCC; border-radius:5px;position: relative; }
+
+.header { position: fixed;top: 0;left: 0;width: 100%;background: #ddd;color: #333;height: 50px;line-height: 50px;text-align: center;opacity: 0.8;filter:alpha(opacity=80);box-shadow: 2px 2px 4px #eee;z-index: 999; }
+.header h1 { font-size:30px; }
+
+.box h2 { padding-bottom:5px; margin-bottom:10px; font-weight:400; color:green; font-size:28px;}
+
+.todos {}
+.todos ul li { list-style-type:none; margin-bottom:10px; padding-bottom:10px; border-bottom:1px dotted #CCC; }
+.todos ul li.item { color:#666; }
+.todos ul li.item input { display: none; }
+.todos ul li a { color:#666; padding-left: 5px; }
+.todos ul li span.date { color: #bbb; padding: 0 5px; }
+.todos ul li span.del { text-decoration: line-through; color: #bbb;}
+.todos ul li span.del::before { content: '✔'; color: #bbb; margin-right: 5px; }
+.todos ul li span.new::before { content: '➤'; color: green; margin-right: 5px; }
+.todos ul li span.editing { border: 2px solid #AAA; padding: 10px 8px; outline: none; }
+
+.todos ul li.editing .new { display: none; }
+.todos ul li.editing input { display: inline-block; background-color: #FFFFCC; }
+
+.post p { margin-bottom:10px; }
+.post .submit { line-height:normal; -padding:0; width: 98%; height: 32px; }
+#leaveMsg {margin-bottom: 80px;}
+#addMsgBtn {width:100px;}
+.nice-tip {color: #51a351;}
+.returnBtn {position: absolute;right: 30px;top: 20px;}
+.mr10 {margin-right: 10px;}
+#myForm p {overflow: hidden;width: 100%;}
+#myForm label {float: left;}
+#myForm label, #myName {height: 30px;line-height: 30px;}
+#myName, #myMessage {float: left;margin-left: 10px;width: 200px;}
+#submitBtn {margin-left: 50px;width: 80px;}
+#nameValidate, #contentValidate {color: #FF0000;display:none;line-height: 30px;margin-left: 10px;}
+input:focus, select:focus {
+    border: 1px solid #49AFCD;
+}
+.footer { background: #eee; color:#666;text-align: center; height: 40px;line-height: 40px;position: fixed;bottom: 0;left: 0;width: 100%;z-index: 9999;}
+

@@ -1,0 +1,19 @@
+body, h1, h2, h3, h4, h5, h6, p, dl, dt, dd, ul, ol, li, pre, fieldset, legend, button, input, textarea, th, td {margin: 0; padding: 0; }
+/* 设置默认字体 for ie */
+body, button, input, select, textarea {font: 14px/1.5  Arial, sans-serif; padding:3px; }
+input { line-height:normal; }
+h1 { font-size:24px; }
+h2 { font-size:20px; }
+h3 { font-size:18px; }
+h4 { font-size:18px; }
+h5 { font-size:14px; }
+h1, h2, h3, h4, h5 { font-weight:normal; }
+address, cite, dfn, em, var { font-style: normal; } /* 将斜体扶正 */
+fieldset, img { border: none; } 
+/* 使得表单元素在 ie 下能继承字体大小 */
+button, input, select, textarea {font-size: 100%; }
+/* 重置表格元素 */
+table {border-collapse: collapse; border-spacing: 0; }
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html { overflow-y: scroll; }
+
